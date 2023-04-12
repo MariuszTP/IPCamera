@@ -25,7 +25,7 @@ from appcam.views import livefeed, index
 urlpatterns = [
     path("admin", admin.site.urls),
     path('', index),
-    path('/camera', livefeed, name="live_camera"),
+    path('camera', livefeed, name="live_camera"),
 ]
 
 

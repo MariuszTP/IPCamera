@@ -7,7 +7,10 @@ from django.views.decorators import gzip
 from django.http import StreamingHttpResponse
 import threading
 
-RTSP_URL = "rtsp://admin:admin@192.168.1.117/2/"
+
+#RTSP_URL = "rtsp://admin:admin@192.168.1.117/2/"
+
+RTSP_URL = "rtsp://109.173.166.155/2/ "
 os.environ['OPENCV_FFMPEG_CAPTURE_OPTIONS'] ='rtsp_transport;udp' # Use tcp instead of udp if stream is unstable
 cap = cv2.VideoCapture(RTSP_URL, cv2.CAP_FFMPEG)
 
